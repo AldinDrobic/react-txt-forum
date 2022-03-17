@@ -1,0 +1,19 @@
+.Avatars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+}
+@media screen and (min-width: 48em) {
+    .Avatars {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+.AvatarsImage {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.AvatarsImageSelected {
+    border: 5px solid var(--bs-teal)
+}
